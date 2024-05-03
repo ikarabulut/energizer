@@ -5,10 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import com.ikarabulut.energize.api.DevicesDAO;
 import com.ikarabulut.energize.api.avro.BatteryEvent;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.ws.rs.POST;
-import jakarta.ws.rs.Path;
-import jakarta.ws.rs.PathParam;
-import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.Context;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
@@ -51,6 +48,12 @@ public class BatteryEventController {
         Future<RecordMetadata> metadata = producer.send(record);
 
         return Response.ok().entity(serialize(metadata.get())).build();
+    }
+
+    @GET
+    @Path("/state")
+    public Response getStatus(@QueryParam("uuid") String uuid) {
+        return Response.ok().entity(db.getDeviceState(table, uuid)).build();
     }
 
     protected Map<String, Object> serialize(RecordMetadata metadata) {
