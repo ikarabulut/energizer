@@ -5,6 +5,7 @@
  */
 package com.ikarabulut.energize.api.avro;
 
+import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -13,10 +14,10 @@ import org.apache.avro.message.SchemaStore;
 
 @org.apache.avro.specific.AvroGenerated
 public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase implements org.apache.avro.specific.SpecificRecord {
-  private static final long serialVersionUID = -4371680704599176736L;
+  private static final long serialVersionUID = 9040507822997167123L;
 
 
-  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BatteryEvent\",\"namespace\":\"com.ikarabulut.energize.avro\",\"fields\":[{\"name\":\"uuid\",\"type\":\"string\"},{\"name\":\"arrival_time_ms\",\"type\":[\"long\",\"null\"]},{\"name\":\"body\",\"type\":[\"bytes\",\"null\"]}]}");
+  public static final org.apache.avro.Schema SCHEMA$ = new org.apache.avro.Schema.Parser().parse("{\"type\":\"record\",\"name\":\"BatteryEvent\",\"namespace\":\"com.ikarabulut.energize.api.avro\",\"fields\":[{\"name\":\"uuid\",\"type\":\"string\"},{\"name\":\"arrival_time_ms\",\"type\":[\"long\",\"null\"]},{\"name\":\"body\",\"type\":[\"bytes\",\"null\"]}]}");
   public static org.apache.avro.Schema getClassSchema() { return SCHEMA$; }
 
   private static final SpecificData MODEL$ = new SpecificData();

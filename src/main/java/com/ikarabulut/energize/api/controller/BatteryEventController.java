@@ -3,7 +3,7 @@ package com.ikarabulut.energize.api.controller;
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.collect.ImmutableMap;
 import com.ikarabulut.energize.api.DevicesDAO;
-import com.ikarabulut.energize.avro.BatteryEvent;
+import com.ikarabulut.energize.api.avro.BatteryEvent;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;
