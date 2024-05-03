@@ -22,7 +22,7 @@ import java.util.concurrent.Future;
 
 import static org.apache.commons.compress.utils.IOUtils.toByteArray;
 
-@Path("/event")
+@Path("/")
 @Produces(MediaType.APPLICATION_JSON)
 public class BatteryEventController {
     protected final KafkaProducer producer;
@@ -39,7 +39,7 @@ public class BatteryEventController {
 
     @POST
     @Timed
-    @Path("/{uuid}")
+    @Path("send/{uuid}")
     public Response createEvent(@PathParam("uuid") String id, @Context HttpServletRequest request) throws IOException, ExecutionException, InterruptedException {
         ByteBuffer body = ByteBuffer.wrap(toByteArray(request.getInputStream()));
         BatteryEvent payload = new BatteryEvent(id, Instant.now().toEpochMilli(), body);

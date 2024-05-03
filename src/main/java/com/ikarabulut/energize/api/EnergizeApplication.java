@@ -37,6 +37,8 @@ public class EnergizeApplication extends Application<EnergizeConfiguration> {
 
         BatteryEventController resource = new BatteryEventController(producer, jdbi.onDemand(DevicesDAO.class), configuration.getDeviceTable(), configuration.getTopic());
         environment.jersey().register(resource);
+
+        environment.jersey().setUrlPattern("/api");
     }
 
     private KafkaProducer createProducer(EnergizeConfiguration conf) {
