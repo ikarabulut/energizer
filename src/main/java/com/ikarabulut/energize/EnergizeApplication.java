@@ -5,10 +5,10 @@ import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
 
-public class energizeApplication extends Application<energizeConfiguration> {
+public class EnergizeApplication extends Application<EnergizeConfiguration> {
 
     public static void main(final String[] args) throws Exception {
-        new energizeApplication().run(args);
+        new EnergizeApplication().run(args);
     }
 
     @Override
@@ -17,12 +17,12 @@ public class energizeApplication extends Application<energizeConfiguration> {
     }
 
     @Override
-    public void initialize(final Bootstrap<energizeConfiguration> bootstrap) {
+    public void initialize(final Bootstrap<EnergizeConfiguration> bootstrap) {
         // TODO: application initialization
     }
 
     @Override
-    public void run(final energizeConfiguration configuration,
+    public void run(final EnergizeConfiguration configuration,
                     final Environment environment) {
 
         BatteryEventController resource = new BatteryEventController();
