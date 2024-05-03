@@ -45,4 +45,4 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - .src/main/resources/sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
+      - ./src/main/resources/sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
