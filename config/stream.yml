@@ -10,5 +10,5 @@ deviceTable: "devices"
 database:
   driverClass: org.postgresql.Driver
   user: postgres
-  password: secret
+  password: postgres
   url: "jdbc:postgresql://0.0.0.0:5432/postgres"
