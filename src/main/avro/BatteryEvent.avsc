@@ -1,4 +1,5 @@
-{"namespace": "com.ikarabulut.energize.avro",
+{
+  "namespace": "com.ikarabulut.energize.avro",
   "type": "record",
   "name": "BatteryEvent",
   "fields": [
