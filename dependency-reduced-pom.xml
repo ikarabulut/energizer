@@ -150,6 +150,13 @@
       </properties>
     </profile>
   </profiles>
+  <repositories>
+    <repository>
+      <id>io.confluent</id>
+      <name>Confluent Repository</name>
+      <url>https://packages.confluent.io/maven/</url>
+    </repository>
+  </repositories>
   <reporting>
     <plugins>
       <plugin>

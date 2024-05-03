@@ -1,3 +1,10 @@
-com/ikarabulut/energize/energizeConfiguration.class
-com/ikarabulut/energize/energizeApplication.class
-com/ikarabulut/energize/controller/BatteryEventController.class
+com/ikarabulut/energize/avro/BatteryEvent.class
+com/ikarabulut/energize/api/DevicesDAO.class
+com/ikarabulut/energize/api/avro/BatteryEvent$1.class
+com/ikarabulut/energize/api/EnergizeApplication.class
+com/ikarabulut/energize/api/avro/BatteryEvent.class
+com/ikarabulut/energize/api/avro/BatteryEvent$Builder.class
+com/ikarabulut/energize/avro/BatteryEvent$Builder.class
+com/ikarabulut/energize/avro/BatteryEvent$1.class
+com/ikarabulut/energize/api/EnergizeConfiguration.class
+com/ikarabulut/energize/api/controller/BatteryEventController.class

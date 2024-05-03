@@ -3,9 +3,8 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package com.ikarabulut.energize.avro;
+package com.ikarabulut.energize.api.avro;
 
-import org.apache.avro.generic.GenericArray;
 import org.apache.avro.specific.SpecificData;
 import org.apache.avro.util.Utf8;
 import org.apache.avro.message.BinaryMessageEncoder;
@@ -180,8 +179,8 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
    * Creates a new BatteryEvent RecordBuilder.
    * @return A new BatteryEvent RecordBuilder
    */
-  public static com.ikarabulut.energize.avro.BatteryEvent.Builder newBuilder() {
-    return new com.ikarabulut.energize.avro.BatteryEvent.Builder();
+  public static com.ikarabulut.energize.api.avro.BatteryEvent.Builder newBuilder() {
+    return new com.ikarabulut.energize.api.avro.BatteryEvent.Builder();
   }
 
   /**
@@ -189,11 +188,11 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing builder to copy.
    * @return A new BatteryEvent RecordBuilder
    */
-  public static com.ikarabulut.energize.avro.BatteryEvent.Builder newBuilder(com.ikarabulut.energize.avro.BatteryEvent.Builder other) {
+  public static com.ikarabulut.energize.api.avro.BatteryEvent.Builder newBuilder(com.ikarabulut.energize.api.avro.BatteryEvent.Builder other) {
     if (other == null) {
-      return new com.ikarabulut.energize.avro.BatteryEvent.Builder();
+      return new com.ikarabulut.energize.api.avro.BatteryEvent.Builder();
     } else {
-      return new com.ikarabulut.energize.avro.BatteryEvent.Builder(other);
+      return new com.ikarabulut.energize.api.avro.BatteryEvent.Builder(other);
     }
   }
 
@@ -202,11 +201,11 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
    * @param other The existing instance to copy.
    * @return A new BatteryEvent RecordBuilder
    */
-  public static com.ikarabulut.energize.avro.BatteryEvent.Builder newBuilder(com.ikarabulut.energize.avro.BatteryEvent other) {
+  public static com.ikarabulut.energize.api.avro.BatteryEvent.Builder newBuilder(com.ikarabulut.energize.api.avro.BatteryEvent other) {
     if (other == null) {
-      return new com.ikarabulut.energize.avro.BatteryEvent.Builder();
+      return new com.ikarabulut.energize.api.avro.BatteryEvent.Builder();
     } else {
-      return new com.ikarabulut.energize.avro.BatteryEvent.Builder(other);
+      return new com.ikarabulut.energize.api.avro.BatteryEvent.Builder(other);
     }
   }
 
@@ -230,7 +229,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(com.ikarabulut.energize.avro.BatteryEvent.Builder other) {
+    private Builder(com.ikarabulut.energize.api.avro.BatteryEvent.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -250,7 +249,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
      * Creates a Builder by copying an existing BatteryEvent instance
      * @param other The existing instance to copy.
      */
-    private Builder(com.ikarabulut.energize.avro.BatteryEvent other) {
+    private Builder(com.ikarabulut.energize.api.avro.BatteryEvent other) {
       super(SCHEMA$, MODEL$);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -280,7 +279,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'uuid'.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder setUuid(java.lang.CharSequence value) {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder setUuid(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.uuid = value;
       fieldSetFlags()[0] = true;
@@ -300,7 +299,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'uuid' field.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder clearUuid() {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder clearUuid() {
       uuid = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -320,7 +319,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'arrival_time_ms'.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder setArrivalTimeMs(java.lang.Long value) {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder setArrivalTimeMs(java.lang.Long value) {
       validate(fields()[1], value);
       this.arrival_time_ms = value;
       fieldSetFlags()[1] = true;
@@ -340,7 +339,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'arrival_time_ms' field.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder clearArrivalTimeMs() {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder clearArrivalTimeMs() {
       arrival_time_ms = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -360,7 +359,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * @param value The value of 'body'.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder setBody(java.nio.ByteBuffer value) {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder setBody(java.nio.ByteBuffer value) {
       validate(fields()[2], value);
       this.body = value;
       fieldSetFlags()[2] = true;
@@ -380,7 +379,7 @@ public class BatteryEvent extends org.apache.avro.specific.SpecificRecordBase im
       * Clears the value of the 'body' field.
       * @return This builder.
       */
-    public com.ikarabulut.energize.avro.BatteryEvent.Builder clearBody() {
+    public com.ikarabulut.energize.api.avro.BatteryEvent.Builder clearBody() {
       body = null;
       fieldSetFlags()[2] = false;
       return this;

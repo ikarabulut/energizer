@@ -1,9 +1,11 @@
-package com.ikarabulut.energize;
+package com.ikarabulut.energize.api;
 
-import com.ikarabulut.energize.controller.BatteryEventController;
+import com.ikarabulut.energize.api.controller.BatteryEventController;
 import io.dropwizard.core.Application;
 import io.dropwizard.core.setup.Bootstrap;
 import io.dropwizard.core.setup.Environment;
+import io.dropwizard.jdbi3.JdbiFactory;
+import org.jdbi.v3.core.Jdbi;
 
 public class EnergizeApplication extends Application<EnergizeConfiguration> {
 
@@ -17,14 +19,12 @@ public class EnergizeApplication extends Application<EnergizeConfiguration> {
     }
 
     @Override
-    public void initialize(final Bootstrap<EnergizeConfiguration> bootstrap) {
-        // TODO: application initialization
-    }
+    public void initialize(final Bootstrap<EnergizeConfiguration> bootstrap) {}
 
     @Override
-    public void run(final EnergizeConfiguration configuration,
-                    final Environment environment) {
-
+    public void run(final EnergizeConfiguration configuration, final Environment environment) {
+        final JdbiFactory factory = new JdbiFactory();
+        final Jdbi jdbi = factory.build(environment, configuration.getDataSourceFactory(), "devices");
         BatteryEventController resource = new BatteryEventController();
         environment.jersey().register(resource);
     }

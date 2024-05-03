@@ -1,3 +1,6 @@
-/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/controller/BatteryEventController.java
-/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/energizeApplication.java
-/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/energizeConfiguration.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/api/DevicesDAO.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/api/EnergizeApplication.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/api/EnergizeConfiguration.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/api/avro/BatteryEvent.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/api/controller/BatteryEventController.java
+/Users/8lwork/8l-work/learning/energize/src/main/java/com/ikarabulut/energize/avro/BatteryEvent.java

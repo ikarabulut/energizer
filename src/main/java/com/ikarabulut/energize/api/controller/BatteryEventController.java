@@ -1,4 +1,4 @@
-package com.ikarabulut.energize.controller;
+package com.ikarabulut.energize.api.controller;
 
 import com.codahale.metrics.annotation.Timed;
 import com.ikarabulut.energize.avro.BatteryEvent;
